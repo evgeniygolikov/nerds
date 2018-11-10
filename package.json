@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run build && git add dist && git commit -m \"Dist subtree commit\" && git subtree push --prefix dist origin gh-pages && rm -rf dist"
   },
   "author": "",
   "license": "ISC",
