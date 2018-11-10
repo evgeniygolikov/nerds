@@ -1,0 +1,22 @@
+.page-header {
+  background-color: $grey;
+}
+
+.page-header__navigation {
+  display: flex;
+  padding-top: 49px;
+}
+
+.page-header__logo {
+  margin: 0 20px;
+}
+
+.page-header__menubar {
+  justify-content: center;
+  width: 760px;
+}
+
+.page-header__check-out {
+  justify-content: flex-end;
+  width: 160px;
+}

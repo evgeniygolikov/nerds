@@ -1,0 +1,68 @@
+.menubar {
+  display: flex;
+  padding: 17px 0 0;
+  margin: 0 20px;
+  list-style: none;
+}
+
+.menubar__item {
+  margin-left: 46px;
+}
+
+.menubar__link {
+  display: block;
+  padding: 9px 0;
+  font-size: 16px;
+  font-weight: $font-weight-medium;
+  line-height: 30px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &[href]:hover {
+    color: $red;
+  }
+  
+  &[href]:focus {
+    color: $red;
+    outline: none;
+  }
+  
+  &[href]:active {
+    color: $black;
+    opacity: 0.3;
+  }
+}
+
+.menubar__link--current {
+  padding-bottom: 7px;
+  border-bottom: 2px solid $red;
+}
+
+.menubar--primary .menubar__item:first-child {
+  margin-left: 0;
+}
+
+.menubar--check-out .menubar__link {
+  position: relative;
+  z-index: 0;
+  padding-left: 40px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    left: -1px;
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/cart-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+  }
+
+  &:active::before {
+    opacity: 1;
+  }
+}

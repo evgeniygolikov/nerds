@@ -1,0 +1,25 @@
+<div class="modal" id="contact-form-modal" aria-hidden="true" tabindex="-1">
+  <section class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="contact-form-modal-title">
+    <h2 class="modal__title title" id="contact-form-modal-title">Напишите нам</h2>
+    <form class="contact-form" action="" method="post">
+      <div class="contact-form__group field">
+        <label for="contact-name">Ваше имя:</label>
+        <input id="contact-name" data-modal-focusable="first" type="text" name="name-surname" placeholder="Имя Фамилия" aria-label="Введите ваше имя и фамилию">
+      </div>
+      <div class="contact-form__group field">
+        <label for="contact-email">Ваш e-mail:</label>
+        <input id="contact-email" type="email" name="email" placeholder="email@example.com" aria-label="Введите ваш e-mail">
+      </div>
+      <div class="contact-form__group contact-form__group--message field">
+        <label for="contact-message">Текст письма:</label>
+        <textarea id="contact-message" name="message" rows="5" placeholder="В свободной форме" aria-label="Введите текст письма"></textarea>
+      </div>
+      <button class="contact-form__submit button">Отправить</button>
+    </form>
+    <button class="modal__close" data-modal-focusable="last" aria-label="Закрыть модальное окно">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21">
+        <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+      </svg>
+    </button>
+  </section>
+</div>

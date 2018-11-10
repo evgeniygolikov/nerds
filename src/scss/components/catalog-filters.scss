@@ -1,0 +1,44 @@
+.catalog-filters__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filters__fieldset + .catalog-filters__submit {
+  margin-top: 4px;
+}
+
+.catalog-filters__legend {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: $font-weight-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-filters__list {
+  margin-top: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-filters__list li + li {
+  margin-top: 20px;
+}
+
+.catalog-filters__submit {
+  width: 260px;
+  color: $black;
+  background-color: $grey;
+
+  &:hover,
+  &:focus {
+    background-color: #dfdfdf;
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+}

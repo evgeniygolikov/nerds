@@ -1,0 +1,23 @@
+.logo {
+  width: 160px;
+  height: 65px;
+  transition: opacity 0.15s ease-out;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+.logo img {
+  width: 160px;
+  height: 65px;
+}

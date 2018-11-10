@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Дизайн-студия «Нёрдс»</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css%>">
+</head>
+<body class="page">
+  <%=
+    _.template(require('./includes/page-header.html'))({
+      page: 'index',
+      links: [{
+        href: 'studio.html',
+        title: 'Студия'
+      }, {
+        href: 'clients.html',
+        title: 'Клиенты'
+      }, {
+        href: 'catalog.html',
+        title: 'Магазин'
+      }, {
+        href: 'contacts.html',
+        title: 'Контакты'
+      }]
+    })
+  %>
+  <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
+  <%=require('./includes/slider.html')%>
+  <div class="page-content container">
+    <%=require('./includes/advantages.html')%>
+    <%=require('./includes/studio.html')%>
+    <%=require('./includes/partners.html')%>
+  </div>
+  <%=require('./includes/page-footer.html')%>
+  <%=require('./includes/contact-form.html')%>
+
+  <script src="<%=htmlWebpackPlugin.files.chunks.main.entry%>"></script>
+</body>
+</html>

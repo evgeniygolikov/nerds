@@ -1,0 +1,234 @@
+<div class="catalog">
+  <section class="catalog__filters">
+    <h2 class="visually-hidden">Фильтры товаров</h2>
+    <form class="catalog-filters" action="" method="get">
+      <fieldset class="catalog-filters__fieldset">
+        <legend class="catalog-filters__legend">Стоимость:</legend>
+        <div class="price-filter">
+          <div class="price-filter__range">
+            <div class="price-filter__scale">
+              <div class="price-filter__bar"></div>
+              <div class="price-filter__thumb price-filter__thumb--min"></div>
+              <div class="price-filter__thumb price-filter__thumb--max"></div>
+            </div>
+          </div>
+          <div class="price-filter__controls">
+            <div class="price-filter__controls-group">
+              <label class="price-filter__label" for="price-filter-min">от</label>
+              <input class="price-filter__field" id="price-filter-min" name="min-price" type="text" value="0">
+            </div>
+            <div class="price-filter__controls-group">
+              <label class="price-filter__label" for="price-filter-max">до</label>
+              <input class="price-filter__field" id="price-filter-max" name="max-price" type="text" value="15000">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="catalog-filters__fieldset">
+        <legend class="catalog-filters__legend">Сетка:</legend>
+        <ul class="catalog-filters__list">
+          <li class="catalog-filters__item">
+            <label class="radio">
+              Адаптивная
+              <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
+              <svg width="25" height="25">
+                <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                <circle cx="12.5" cy="12.5" r="4.5"/>
+              </svg>
+            </label>
+          </li>
+          <li class="catalog-filters__item">
+            <label class="radio">
+              Фиксированная
+              <input class="visually-hidden" type="radio" name="grid" value="fixed">
+              <svg width="25" height="25">
+                <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                <circle cx="12.5" cy="12.5" r="4.5"/>
+              </svg>
+            </label>
+          </li>
+          <li class="catalog-filters__item">
+            <label class="radio">
+              Резиновая
+              <input class="visually-hidden" type="radio" name="grid" value="fluid">
+              <svg width="25" height="25">
+                <path d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/>
+                <circle cx="12.5" cy="12.5" r="4.5"/>
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="catalog-filters__fieldset">
+        <legend class="catalog-filters__legend">Особенности:</legend>
+        <ul class="catalog-filters__list">
+          <li class="catalog-filters__item">
+            <label class="checkbox">
+              Слайдер
+              <input class="visually-hidden" type="checkbox" name="slider" checked>
+              <svg width="27" height="23">
+                <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>                
+                <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+              </svg>
+            </label>
+          </li>
+          <li class="catalog-filters__item">
+            <label class="checkbox">
+              Блок преимуществ
+              <input class="visually-hidden" type="checkbox" name="slider">
+              <svg width="27" height="23">
+                <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>                
+                <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+              </svg>
+            </label>
+          </li>
+          <li class="catalog-filters__item">
+            <label class="checkbox">
+              Новости
+              <input class="visually-hidden" type="checkbox" name="slider" checked>
+              <svg width="27" height="23">
+                <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>                
+                <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+              </svg>
+            </label>
+          </li>
+          <li class="catalog-filters__item">
+            <label class="checkbox">
+              Галерея
+              <input class="visually-hidden" type="checkbox" name="slider">
+              <svg width="27" height="23">
+                <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>                
+                <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+              </svg>
+            </label>
+          </li>
+          <li class="catalog-filters__item">
+            <label class="checkbox">
+              Корзина
+              <input class="visually-hidden" type="checkbox" name="slider">
+              <svg width="27" height="23">
+                <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>                
+                <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="catalog-filters__submit button" type="button">Показать</button>
+    </form>
+  </section>
+
+  <section class="catalog__templates">
+    <h2 class="visually-hidden">Список готовых шаблонов</h2>
+    <div class="catalog-sort">
+      <b class="catalog-sort__title">Сортировать:</b>
+      <ul class="catalog-sort__list">
+        <li class="catalog-sort__item">
+          <a class="catalog-sort__filter catalog-sort__filter--current" href="#" aria-label="Классифицировать по цене">По цене</a>
+        </li>
+        <li class="catalog-sort__item">
+          <a class="catalog-sort__filter" href="#" aria-label="Классифицировать по типу">По типу</a>
+        </li>
+        <li class="catalog-sort__item">
+          <a class="catalog-sort__filter" href="#" aria-label="Классифицировать по названию">По названию</a>
+        </li>
+      </ul>
+      <a class="catalog-sort__filter catalog-sort__filter--current" href="#">
+        <svg width="11" height="10">
+          <path d="M5.5 10L0 0h11"/>
+        </svg>
+      </a>
+      <a class="catalog-sort__filter" href="#">
+        <svg width="11" height="10">
+          <path d="M5.5 0L0 10h11z"/>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="templates">
+      <li class="templates__item">
+        <div class="template">
+          <img class="image" src="../images/sedona-template.jpg" width="360" height="576" alt="Шаблон «Седона»">
+          <div class="template__info">
+            <h3 class="template__name">Sedona</h3>
+            <p class="template__description">Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </div>
+      </li>
+      <li class="templates__item">
+        <div class="template">
+          <img class="image" src="../images/pink-template.jpg" width="360" height="576" alt="Шаблон «Пинк»">
+          <div class="template__info">
+            <h3 class="template__name">Pink App</h3>
+            <p class="template__description">Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </div>
+      </li>
+      <li class="templates__item">
+        <div class="template">
+          <img class="image" src="../images/barbershop-template.jpg" width="360" height="576" alt="Шаблон «Барбершоп»">
+          <div class="template__info">
+            <h3 class="template__name">Barbershop</h3>
+            <p class="template__description">Сайт салона красоты. Для мужчин, да.</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </div>
+      </li>
+      <li class="templates__item">
+        <div class="template">
+          <img class="image" src="../images/mishka-template.jpg" width="360" height="576" alt="Шаблон «Мишка»">
+          <div class="template__info">
+            <h3 class="template__name">Mishka</h3>
+            <p class="template__description">Интернет-магазин вязаных игрушек</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </div>
+      </li>
+      <li class="templates__item">
+        <div class="template">
+          <img class="image" src="../images/aplus-template.jpg" width="360" height="576" alt="Шаблон «Аплюс»">
+          <div class="template__info">
+            <h3 class="template__name">A Plus</h3>
+            <p class="template__description">Лендинг курсов повышения квалификации</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </div>
+      </li>
+      <li class="templates__item">
+        <div class="template">
+          <img class="image" src="../images/kvast-template.jpg" width="360" height="576" alt="Шаблон «Кваст»">
+          <div class="template__info">
+            <h3 class="template__name">Кваст</h3>
+            <p class="template__description">Промо-сайт производителя крафтового кваса</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <nav role="navigation" aria-label="Постраничная навигация">
+      <ul class="pagination">
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--current button" aria-current="true" aria-label="Страница 1, Текущая страница">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link button" href="#" aria-label="Перейти на страницу 2">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link button" href="#" aria-label="Перейти на страницу 3">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--button button" href="#" aria-label="Перейти на следующую страницу">Следующая</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</div>

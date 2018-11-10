@@ -1,0 +1,27 @@
+.contacts {
+  padding: 49px 50px 47px;
+  background-color: $white;
+}
+
+.contacts__title {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-size: 18px;
+  font-weight: $font-weight-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+
+.contacts__phone {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.contacts__button {
+  width: 219px;
+}

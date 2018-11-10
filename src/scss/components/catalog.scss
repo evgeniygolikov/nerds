@@ -1,0 +1,14 @@
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__filters {
+  width: 260px;
+  margin: 0 20px;
+}
+
+.catalog__templates {
+  width: 760px;
+  margin: 0 20px;
+}

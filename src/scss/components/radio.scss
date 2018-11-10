@@ -1,0 +1,38 @@
+.radio {
+  position: relative;
+  padding-left: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-black;
+  cursor: pointer;
+}
+
+.radio input[type="radio"]:checked + svg circle {
+  opacity: 1;
+}
+
+.radio input[type="radio"]:focus + svg {
+  fill: $light-black;
+}
+
+.radio input[type="radio"]:disabled + svg {
+  fill: rgba($light-black, 0.1);
+}
+
+.radio svg {
+  position: absolute;
+  top: -3px;
+  left: 1px;
+  z-index: 0;
+  fill: rgba($light-black, 0.4);
+  transition: fill 0.15s ease-out;
+}
+
+.radio:hover svg {
+  fill: $light-black;
+}
+
+.radio svg circle {
+  opacity: 0;
+  transition: opacity 0.15s ease-out;
+}

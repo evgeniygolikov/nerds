@@ -1,0 +1,46 @@
+.checkbox {
+  position: relative;
+  padding-left: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-black;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked + svg path:first-child {
+  opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:checked + svg path:not(:first-child) {
+  opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:focus + svg {
+  fill: $light-black;
+}
+
+.checkbox input[type="checkbox"]:disabled + svg {
+  fill: rgba($light-black, 0.1);
+}
+
+.checkbox svg {
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  z-index: 0;
+  fill: rgba($light-black, 0.4);
+  transition: fill 0.15s ease-out;
+}
+
+.checkbox:hover svg {
+  fill: $light-black;
+}
+
+.checkbox svg path {
+  opacity: 0;
+  transition: opacity 0.15s ease-out;
+}
+
+.checkbox svg path:first-child {
+  opacity: 1;
+}
